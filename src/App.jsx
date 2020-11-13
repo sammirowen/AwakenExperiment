@@ -13,8 +13,8 @@ const useStyles = makeStyles({
   appBody: {
     height: 'calc(100vh - 64px)',
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'top',
+    justifyContent: 'left',
     backgroundColor: '#eeeeee',
   },
 });

@@ -337,6 +337,54 @@ const QuestionnairePage = () => {
             <button type="submit" class="btn btn-primary">
                 Submit
             </button>
+
+            <div className="container">
+            <p>Rate your arousal level?</p>
+            <form>
+                <label><img width="7%" length="7%" src = {require("../images/arousal_1.png")} /></label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label><img width="7%" length="7%" src = {require("../images/arousal_5.png")} /></label>
+            </form>
+            </div><br/>
+
+            <div className="container">
+            <p>Rate your valence level?</p>
+            <form>
+                <label><img width="7%" length="7%" src = {require("../images/happy.png")} /></label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label className="radio-inline">
+                <input type="radio" name="optradio"/>
+                </label>
+                <label><img width="7%" length="7%" src = {require("../images/sad.png")} /></label>
+            </form>
+            </div><br/>
+            
+
         </form>
     </div>);
 };
