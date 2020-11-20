@@ -1,5 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const useStyles = makeStyles({});
 
@@ -14,86 +16,86 @@ const QuestionnairePage = () => {
         <form>
             <div className="container">
             <p>How often do you share, post or comment on social media sites (Facebook, Twitter, etc.) as opposed to reading or viewing content?</p>
-            <form>
-                <label className="radio-inline">
+            <RadioGroup row>
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Never
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Hardly ever
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Sometimes
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Frequently
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Almost all the time
                 </label>
-            </form>
+            </RadioGroup>
             </div><br/>
 
             <div className="container">
             <p>How often do you read or view content on social media sites (Facebook, Twitter, etc.)?</p>
-            <form>
-                <label className="radio-inline">
+            <RadioGroup row>
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Never
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Hardly ever
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Sometimes
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Frequently
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Almost all the time
                 </label>
-            </form>
+            </RadioGroup>
             </div><br/>
 
             <div className="container">
             <p>How often do you comment on news sites, news apps, or news social media pages?</p>
-            <form>
-                <label className="radio-inline">
+            <RadioGroup row>
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Never
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Hardly ever
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Sometimes
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Frequently
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Almost all the time
                 </label>
-            </form>
+            </RadioGroup>
             </div><br/>
 
             <div className="container">
             <p>How often do you read comments on news sites, news apps, or news social media pages?</p>
-            <form>
-                <label className="radio-inline">
+            <RadioGroup row>
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Never
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Hardly ever
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Sometimes
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Frequently
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Almost all the time
                 </label>
-            </form>
+            </RadioGroup>
             </div><br/>
 
             <div className="form-check">
@@ -198,57 +200,59 @@ const QuestionnairePage = () => {
 
             <div className="container">
             <p>How closely do you follow politics on TV, radio, newspapers, or the Internet?</p>
-            <form>
-                <label className="radio-inline">
+            <RadioGroup row>
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Not at all
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "15%"}}>
                 <input type="radio" name="optradio"/>Moderately
                 </label>
-                <label className="radio-inline">
-                <input type="radio" name="optradio"/>Very closely
+                <label style={{width: "15%"}}>
+                <input type="radio" name="optradio"/>Very Closely
                 </label>
-            </form>
+            </RadioGroup>
             </div><br/>
 
             <div className="container">
             <p>In politics, people often talk of the political "left" and "right". Where would you place yourself on this scale, where 0 means left and 10 means right?</p>
             <form>
-                <label>Left </label>
-                <label className="radio-inline">
+                <RadioGroup row>
+                <label style={{width: "7%"}}>Left </label>
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>0
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>1
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>2
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>3
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>4
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>5
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>6
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>7
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>8
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>9
                 </label>
-                <label className="radio-inline">
+                <label style={{width: "7%"}}>
                 <input type="radio" name="optradio"/>10
                 </label>
                 <label> Right</label>
+                </RadioGroup>
             </form>
             </div><br/>
 
@@ -343,19 +347,19 @@ const QuestionnairePage = () => {
             <form>
                 <label><img width="7%" length="7%" src = {require("../images/arousal_1.png")} /></label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label><img width="7%" length="7%" src = {require("../images/arousal_5.png")} /></label>
             </form>
@@ -366,25 +370,23 @@ const QuestionnairePage = () => {
             <form>
                 <label><img width="7%" length="7%" src = {require("../images/happy.png")} /></label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label className="radio-inline">
-                <input type="radio" name="optradio"/>
+                <input type="radio" style={{width: "15%"}} name="optradio"/>
                 </label>
                 <label><img width="7%" length="7%" src = {require("../images/sad.png")} /></label>
             </form>
             </div><br/>
-            
-
         </form>
     </div>);
 };
