@@ -8,6 +8,7 @@ import SurveyPage from './pages/surveyPage.component';
 import ExperimentsPage from './pages/experimentsPage.component';
 import QuestionnairePage from './pages/questionnairePage.component';
 import ConsentPage from './pages/consentPage.component';
+import SAMPage from './pages/SAMPage.component';
 
 const useStyles = makeStyles({
   appBody: {
@@ -34,6 +35,8 @@ function App() {
           <Route exact path='/experiments' component={ExperimentsPage} />
           <Route exact path='/questionnaire' component={QuestionnairePage} />
           <Route exact path='/consent' component={ConsentPage} />
+          <Route exact path='/sam' component={SAMPage} />
+          <Route path='/sam/:id' component={SAMPage} />
         </Switch>
       </div>
     </>
