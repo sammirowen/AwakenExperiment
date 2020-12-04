@@ -23,9 +23,8 @@ const QNR = ({SAMquestdata}) => {
 
     return (
         <div className= {classes.form}>
-            <p className={classes.intro}>{SAMquestdata.intro}</p>
             {SAMquestdata.trustQuestions.map((question)=>(
-            <TRUST quest={question} />))}    
+            <TRUST quest={question} />))} 
         </div>
     )
     }

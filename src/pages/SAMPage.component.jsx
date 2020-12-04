@@ -12,12 +12,20 @@ const useStyles = makeStyles({
     display: 'flex',
     padding: '50px',
   },
+  intro: {
+      marginBottom: '50px',
+  },
+  submitBtn: {
+      marginTop: '50px',
+      marginBottom: '150px',
+      float: 'right',
+  }
 });
 // put all the survey questions here in the form of dictionary
 // these dictionary objects are passed as props to corrosponding component rendering the questionnaire
 // SCTquestdata are the questionnaire to assess IV: ego development level
 const SAMquestdata = {
-  intro : 'Intro' ,
+  intro : 'Filler Intro Text' ,
   questions : [{"question":'Rate Valence (include valence definition)', "img1":require("../images/happy.png"), "img2":require("../images/sad.png")}, 
                 {"question":'Rate Arousal (include arousal definition)', "img1":require("../images/arousal_1.png"), "img2":require("../images/arousal_5.png")}
                   ],
@@ -34,9 +42,14 @@ const SAMPage = ({ match }) => {
 
   return (
     <div>
+
+      <p className={classes.intro}>{SAMquestdata.intro}</p>
+      
       <SAM SAMquestdata = {SAMquestdata} /> 
 
       <TRUST SAMquestdata = {SAMquestdata} /> 
+
+      <Button className= {classes.submitBtn} variant="contained" color='primary'>Submit and Proceed</Button>
     </div>
   );
 };
